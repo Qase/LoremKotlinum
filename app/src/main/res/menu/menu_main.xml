@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.quanti.qase.loremkotlinum.MainActivity">
+    <item
+        android:id="@+id/action_word"
+        android:orderInCategory="100"
+        android:title="@string/action_word"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_words"
+        android:orderInCategory="100"
+        android:title="@string/action_words"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sentence"
+        android:orderInCategory="100"
+        android:title="@string/action_sentence"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sentences"
+        android:orderInCategory="100"
+        android:title="@string/action_sentences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_paragraph"
+        android:orderInCategory="100"
+        android:title="@string/action_paragraph"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_paragraphs"
+        android:orderInCategory="100"
+        android:title="@string/action_paragraphs"
+        app:showAsAction="never" />
+</menu>

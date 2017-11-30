@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoremKotlinum</string>
+    <string name="action_word">Word</string>
+    <string name="action_words">Words</string>
+    <string name="action_sentence">Sentence</string>
+    <string name="action_sentences">Sentences</string>
+    <string name="action_paragraph">Paragraph</string>
+    <string name="action_paragraphs">Paragraphs</string>
+    <string name="action_email">Email</string>
+    <string name="action_tweet">Tweet</string>
+</resources>

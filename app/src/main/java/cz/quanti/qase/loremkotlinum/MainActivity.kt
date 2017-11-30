@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
 
     fun initHolder() {
         sb.delete(0, sb.length)
-        sb.append("Characters " + begSign + " and " + endSign + " are not part of the text.\n\n")
+        sb.append("Characters ♦, " + begSign + " and " + endSign + " are not part of the " + getString(R.string.app_name) +  " generated text.\n\n")
     }
     
     fun store2Holder(string: String) {
@@ -125,34 +125,5 @@ class MainActivity : AppCompatActivity() {
     fun dispayHolder() {
         scroll_view.scrollTo(0, 0)
         text_view.setText(sb.toString())
-    }
-    
-    fun xxx() {
-
-        for (i in 1..8) {
-            store2Holder( "paragraph():\n"+ begSign + Lorem.paragraph())
-        }
-
-        for (i in 1..8) {
-            store2Holder( "paragraph(" + i + "):\n"+ begSign + Lorem.paragraph(i))
-        }
-
-        for (i in 1..8) {
-            store2Holder( "paragraphs():\n"+ begSign + Lorem.paragraphs())
-        }
-
-        for (i in 1..8) {
-            store2Holder( "paragraphs(" + i + "):\n"+ begSign + Lorem.paragraphs(i))
-        }
-
-        for (i in 1..8) {
-            store2Holder( "email:\n"+ begSign + Lorem.email())
-        }
-
-        for (i in 1..8) {
-            store2Holder( "tweet:\n"+ begSign + Lorem.tweet())
-        }
-
-        dispayHolder()
     }
 }

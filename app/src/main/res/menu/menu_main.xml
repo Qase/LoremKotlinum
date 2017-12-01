@@ -32,4 +32,34 @@
         android:orderInCategory="100"
         android:title="@string/action_paragraphs"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_first_name"
+        android:orderInCategory="100"
+        android:title="@string/action_first_name"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_last_name"
+        android:orderInCategory="100"
+        android:title="@string/action_last_name"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_name"
+        android:orderInCategory="100"
+        android:title="@string/action_name"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_domain"
+        android:orderInCategory="100"
+        android:title="@string/action_domain"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_email"
+        android:orderInCategory="100"
+        android:title="@string/action_email"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tweet"
+        android:orderInCategory="100"
+        android:title="@string/action_tweet"
+        app:showAsAction="never" />
 </menu>

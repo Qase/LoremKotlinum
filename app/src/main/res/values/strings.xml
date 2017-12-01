@@ -8,4 +8,8 @@
     <string name="action_paragraphs">Paragraphs</string>
     <string name="action_email">Email</string>
     <string name="action_tweet">Tweet</string>
+    <string name="action_first_name">First name</string>
+    <string name="action_last_name">Last name</string>
+    <string name="action_name">Name</string>
+    <string name="action_domain">Domain</string>
 </resources>

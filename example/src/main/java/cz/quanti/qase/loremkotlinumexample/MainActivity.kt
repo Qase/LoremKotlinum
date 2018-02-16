@@ -10,10 +10,9 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val sb = StringBuilder();
-    
-    val begMark = ""//"»"
-    val endMark = ""//"«"
+    private val sb = StringBuilder()
+    private val begMark = "»"
+    private val endMark = "«"
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,32 +20,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
-
-    fun initHolder() {
-        sb.delete(0, sb.length)
-        //sb.append("Characters " + begMark + " and " + endMark + " are not part of the " + getString(R.string.app_name) +  " generated text.\n\n")
-    }
-
-    fun store2Holder(string: String) {
-        sb.append(string + "\n\n")
-    }
-
-    fun dispayHolder() {
-        scroll_view.scrollTo(0, 0)
-        text_view.setText(sb.toString())
-    }
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        toolbar.setTitle(item.title)
+        toolbar.title = item.title
         val id = item.itemId
 
         when (id) {
@@ -56,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.word():\n"+ begMark + Lorem.word() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -70,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.words(" + i + "):\n"+ begMark + Lorem.words(i) + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -84,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.sentnece(" + i +"):\n"+ begMark + Lorem.sentence(i) + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -98,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.sentences(" + i + "):\n"+ begMark + Lorem.sentences(i) + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -111,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.paragraph(" + i + "):\n"+ begMark + Lorem.paragraph(i) + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -121,11 +101,11 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.paragraphs():\n"+ begMark + Lorem.paragraphs() + endMark)
                 }
 
-                for (i in 1..Lorem.maxParagraps) {
+                for (i in 1..Lorem.maxParagraphs) {
                     store2Holder( "♦ Lorem.paragraphs(" + i + "):\n"+ begMark + Lorem.paragraphs(i) + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -135,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.firstName():\n"+ begMark + Lorem.firstName() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -145,7 +125,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.lastName():\n"+ begMark + Lorem.lastName() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -155,7 +135,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.name():\n"+ begMark + Lorem.name() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -165,7 +145,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.domain():\n"+ begMark + Lorem.domain() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -175,7 +155,7 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.email():\n"+ begMark + Lorem.email() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
 
@@ -185,11 +165,24 @@ class MainActivity : AppCompatActivity() {
                     store2Holder( "♦ Lorem.tweet():\n"+ begMark + Lorem.tweet() + endMark)
                 }
 
-                dispayHolder()
+                displayHolder()
                 return true
             }
         }
 
-            return super.onOptionsItemSelected(item)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun initHolder() {
+        sb.delete(0, sb.length)
+    }
+
+    private fun store2Holder(string: String) {
+        sb.append(string + "\n\n")
+    }
+
+    private fun displayHolder() {
+        scroll_view.scrollTo(0, 0)
+        text_view.text = sb.toString()
     }
 }

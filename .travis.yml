@@ -7,3 +7,5 @@ android:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
+notifications:
+  slack: quantiteam:svjsHPVDuNZTLdB8Sl5IT7jK

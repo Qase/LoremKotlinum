@@ -1,5 +1,6 @@
 [![Release](https://jitpack.io/v/Qase/LoremKotlinum.svg)](https://jitpack.io/#Qase/LoremKotlinum)
 [![Build Status](https://travis-ci.org/Qase/LoremKotlinum.svg?branch=master)](https://travis-ci.org/Qase/LoremKotlinum)
+[![codebeat badge](https://codebeat.co/badges/ff17f01c-c270-4800-9315-4a12098b40dd)](https://codebeat.co/projects/github-com-qase-loremkotlinum-master)
 
 # Lorem Kotlinum
 

@@ -1,11 +1,12 @@
 language: android
 android:
   components:
-    - build-tools-26.0.2
-    - android-26
+  - build-tools-26.0.2
+  - android-26
   licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
 notifications:
-  slack: quantiteam:svjsHPVDuNZTLdB8Sl5IT7jK
+  slack:
+    secure: F93Z4s4UPJ0UwuatK5imk+JtDe3fycbMkDnAw8nIa/0zz7hOR93ak0yTbcCf5RnYO0DkZTHYK4g6VCie3ZvprYbAhre4gdWo8fGib4JOUMZMeDf6m4zaLTsy3/yvpX+suuDfEXeXWcqRfBW3PZAHQlPYxcCMn+rbYyPl+s7u4BbOJgnJIEEu7zq87e+RWgJ2eQ6FgLfB3/h0CebSz1RG/XvDpfTV0vwAWrYBPZn5JfTFtfHLFEYR0tDk7eSZF99LuqLqQrsPPrRC0InMe67tK1i9DkzTmkTIDoPcIYNxPGhM4N+RR9oPuEbVQZ2YF4OnAOBwmLMLdvTrM0TpQQL4xrsfYpg4GYnf2kqAUZzpRHSOZukb5r+y9zyIG7+ClJ1hE9NAHORQGbymltNG0RtKC4gmeHQHhppnq6MGh/O+2K79DcLBrGNDglXBwY/oJhy60gMChuXWjJFozHIjuK3CL4PyysFZTRaAa1TSbqEzwWgWYLiXBLfv/suxMMF2N5IQvmoqsQrtFvALYortpMx0TMzkVn3t44Cj/8ayTeu+5cP003FubgCgCEm6pikIGvtuEtKP3pNxIwCcTapVYAmHY/OUH3oPpdMEuuzEbzOl3cwU9g+LKXiJ78MR/ao+L2tbNE7xPHZAsn6D35tcwscb/FpXyCPaIUnu3XnZcMgtBkg=

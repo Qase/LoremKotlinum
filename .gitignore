@@ -4,6 +4,8 @@ local.properties
 
 # IntelliJ
 *.iml
+.idea/caches/
+.idea/codeStyles/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml

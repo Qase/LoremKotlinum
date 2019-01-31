@@ -27,7 +27,7 @@ Click [HERE](https://jitpack.io/#Qase/LoremKotlinum).
 Lorem.word()        //voluptatem
 Lorem.email()       //kadenbarton@email.com
 Lorem.name()        //Sydney Carver
-Lorem.sentences(1) //Voluptatem animi atque magni aut.
+Lorem.sentences(1)  //Voluptatem animi atque magni aut.
 //and many more
 ```
 

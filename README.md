@@ -1,21 +1,36 @@
 [![Release](https://jitpack.io/v/Qase/LoremKotlinum.svg)](https://jitpack.io/#Qase/LoremKotlinum)
 [![Build Status](https://travis-ci.org/Qase/LoremKotlinum.svg?branch=master)](https://travis-ci.org/Qase/LoremKotlinum)
 [![codebeat badge](https://codebeat.co/badges/ff17f01c-c270-4800-9315-4a12098b40dd)](https://codebeat.co/projects/github-com-qase-loremkotlinum-master)
+[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintainer: petr](https://img.shields.io/badge/Maintainer-petr-blue.svg)](mailto:petr.posvic@quanti.cz)
+[![Qase: KotlinLogger](https://img.shields.io/badge/Qase-LoremKotlinum-ff69b4.svg)](https://github.com/Qase/LoremKotlinum)
 
 # Lorem Kotlinum
 
 Simple text generator for Kotlin.
 
+## Features
+* Easy to use
+* Lot of possible data types
+* Mock emails, names, tweets, sentences or paragraphs in seconds
+* Lightweight - just one file
+* Sample [app](github/sampleApp.png) is ready to build
+
 ## Installation
 
-Project si hosted on [Jitpack](https://jitpack.io) so the basic installation is found [HERE](https://jitpack.io/#Qase/LoremKotlinum).
+Click [HERE](https://jitpack.io/#Qase/LoremKotlinum).
+
+## Code example
+
+```Kotlin
+Lorem.word()        //voluptatem
+Lorem.email()       //kadenbarton@email.com
+Lorem.name()        //Sydney Carver
+Lorem.sentences(1) //Voluptatem animi atque magni aut.
+//and many more
+```
+
 
 ## License
-
-Copyright 2018 Quanti s.r.o
-
-Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at 
-
-http://www.apache.org/licenses/LICENSE-2.0 
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+[MIT](https://github.com/nishanths/license/blob/master/LICENSE)

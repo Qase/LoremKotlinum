@@ -31,6 +31,7 @@ Lorem.sentences(1)  //Voluptatem animi atque magni aut.
 //and many more
 ```
 
+<img src="github/loremkotlinum.gif" width="400">
 
 ## License
 [MIT](https://github.com/nishanths/license/blob/master/LICENSE)
